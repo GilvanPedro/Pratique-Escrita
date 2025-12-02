@@ -1,0 +1,93 @@
+:root {
+    --bg-color-01: #333333;
+    --bg-color-02: #d6d6d6;
+    --txt-color-01: #ffffff;
+    --txt-color-02: #8b54c6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly-around;
+    background-color: var(--txt-color-02);
+    padding: 30px;
+}
+
+header div a{
+    padding: 20px;
+    color: black;
+}
+
+header div a:hover{
+    transition: 0.2s ease;
+    background-color: #6024a1;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.titulo{
+    align-items: center;
+    text-align: center;
+}
+
+.texto{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#folha,
+.folha{
+    align-items: center;
+    justify-content: center;
+}
+
+#folha .escreverTexto,
+.folha .escreverTexto{
+    display: block;
+    text-align: left;
+}
+
+#folha{
+    background: var(--bg-color-01);
+    border: 1px solid #000000;
+    border-radius: 12px;
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.25), 0 6px 12px rgba(255, 255, 255, 0.18);
+    padding: 16px 20px;
+}
+
+#folha p a{
+    color: rgb(50, 67, 255);
+}
+
+#folha .titulo{
+    margin: 4px 0 12px 0;
+}
+
+.escreverTexto{
+    height: 700px;
+    width: 600px;
+    max-width: 90vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    outline: none;
+    box-sizing: border-box;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding: 12px 14px;
+    background: transparent;
+    border: 1px dashed #ffffff;
+    border-radius: 8px;
+    box-shadow: none;
+}
